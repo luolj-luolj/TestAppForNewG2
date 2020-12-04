@@ -348,6 +348,19 @@ void CardboardQrCode_getCardboardV1DeviceParams(uint8_t** encoded_device_params,
 
 /// @}
 
+
+void CardboardHidSensor_setUsbParams(int vid, int pid, int fd,
+        int busnum, int devaddr, const char *usbfs);
+
+void CardboardHidSensor_setUsbClose();
+
+void CardboardHidSensor_setUsbExit();
+
+void CardboardHidSensor_setStUfd(int vid, int pid, int fd,
+        int busnum, int devaddr, const char *usbfs);
+
+int CardboardHidSensor_sendDataToSt(int x, int y);
+
 #ifdef __cplusplus
 }
 #endif

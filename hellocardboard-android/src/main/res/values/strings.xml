@@ -22,4 +22,6 @@
             description="Short text shown on the settings menu to let the user switch viewer.
                          [CHAR_LIMIT=30]">
             Switch Cardboard viewer</string>
+    <string name="ov_connected">OV Connected</string>
+    <string name="st_connected">ST Connected</string>
 </resources>

@@ -1,0 +1,23 @@
+Executable : /home/linda/Android/Sdk/cmake/3.10.2.4988404/bin/cmake
+arguments : 
+-H/media/D/backup/github/luolj/TestAppForNewG2/hellocardboard-android
+-DCMAKE_CXX_FLAGS=-std=c++11
+-DCMAKE_FIND_ROOT_PATH=/media/D/backup/github/luolj/TestAppForNewG2/hellocardboard-android/.cxx/cmake/debug/prefab/armeabi-v7a/prefab
+-DCMAKE_BUILD_TYPE=Debug
+-DCMAKE_TOOLCHAIN_FILE=/home/linda/Android/Sdk/ndk/21.0.6113669/build/cmake/android.toolchain.cmake
+-DANDROID_ABI=armeabi-v7a
+-DANDROID_NDK=/home/linda/Android/Sdk/ndk/21.0.6113669
+-DANDROID_PLATFORM=android-19
+-DCMAKE_ANDROID_ARCH_ABI=armeabi-v7a
+-DCMAKE_ANDROID_NDK=/home/linda/Android/Sdk/ndk/21.0.6113669
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/media/D/backup/github/luolj/TestAppForNewG2/hellocardboard-android/build/intermediates/cmake/debug/obj/armeabi-v7a
+-DCMAKE_MAKE_PROGRAM=/home/linda/Android/Sdk/cmake/3.10.2.4988404/bin/ninja
+-DCMAKE_SYSTEM_NAME=Android
+-DCMAKE_SYSTEM_VERSION=19
+-DANDROID_STL=c++_shared
+-B/media/D/backup/github/luolj/TestAppForNewG2/hellocardboard-android/.cxx/cmake/debug/armeabi-v7a
+-GNinja
+jvmArgs : 
+
+Build command args:

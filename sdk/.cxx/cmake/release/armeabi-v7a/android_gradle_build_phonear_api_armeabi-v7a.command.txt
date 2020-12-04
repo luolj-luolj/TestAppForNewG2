@@ -1,0 +1,7 @@
+Executable : /home/linda/Android/Sdk/cmake/3.10.2.4988404/bin/ninja
+arguments : 
+-C
+/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/release/armeabi-v7a
+phonear_api
+jvmArgs : 
+

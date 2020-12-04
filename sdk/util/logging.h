@@ -32,6 +32,11 @@
 #define CARDBOARD_LOGE(...) \
   __android_log_print(ANDROID_LOG_ERROR, "CardboardSDK", __VA_ARGS__)
 
+#define PHONEAR_LOGI(...) \
+  __android_log_print(ANDROID_LOG_INFO, "PHONEAR", __VA_ARGS__)
+#define PHONEAR_LOGE(...) \
+  __android_log_print(ANDROID_LOG_ERROR, "PHONEAR", __VA_ARGS__)
+
 #else
 
 #define CARDBOARD_LOGI(...)

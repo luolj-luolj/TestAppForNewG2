@@ -1,0 +1,215 @@
+{
+  "stringTable": {
+    "0": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a",
+    "1": "--target=armv7-none-linux-androideabi19 --gcc-toolchain=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dphonear_api_EXPORTS -I../../../../. -I../../../../../third_party/unity_plugin_api -I../../../../libs/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security -std=c++11 -O0 -fno-limit-debug-info -fPIC"
+  },
+  "buildFiles": [
+    "/home/linda/Android/Sdk/ndk/21.0.6113669/build/cmake/android.toolchain.cmake",
+    "/media/D/backup/github/luolj/TestAppForNewG2/sdk/CMakeLists.txt",
+    "/home/linda/Android/Sdk/ndk/21.0.6113669/build/cmake/platforms.cmake"
+  ],
+  "cleanCommands": [
+    "/home/linda/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a\" clean"
+  ],
+  "buildTargetsCommand": "/home/linda/Android/Sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "phonear_api-Debug-armeabi-v7a": {
+      "buildCommand": "/home/linda/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a\" phonear_api",
+      "buildType": "debug",
+      "toolchain": "2575937652",
+      "abi": "armeabi-v7a",
+      "artifactName": "phonear_api",
+      "files": [
+        {
+          "src": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/qrcode/cardboard_v1/cardboard_v1.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/cardboard.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/distortion_mesh.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/distortion_renderer.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/head_tracker.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/lens_distortion.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/polynomial_radial_distortion.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/sensors/gyroscope_bias_estimator.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/sensors/lowpass_filter.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/sensors/mean_filter.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/sensors/median_filter.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/sensors/neck_model.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/sensors/pose_prediction.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/sensors/sensor_fusion_ekf.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/sensors/xt/Calibration.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/sensors/xt/Math.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/sensors/xt/device_accelerometer_sensor.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/sensors/xt/device_gyroscope_sensor.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/sensors/xt/hid_sensor.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/sensors/xt/sensor_event_producer.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/jni_utils/android/jni_utils.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/util/matrix_3x3.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/util/matrix_4x4.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/util/matrixutils.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/util/rotation.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/util/vectorutils.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/qrcode/android/qr_code.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/screen_params/android/screen_params.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/device_params/android/device_params.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/unity/android/unity_jni.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/unity/xr_unity_plugin/cardboard_xr_unity.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/unity/xr_provider/display.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/unity/xr_provider/input.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/unity/xr_provider/main.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/unity/xr_provider/math_tools.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/build/intermediates/cmake/debug/obj/armeabi-v7a/libphonear_api.so",
+      "runtimeFiles": [
+        "/media/D/backup/github/luolj/TestAppForNewG2/sdk/libs/armeabi-v7a/libusb100.so"
+      ]
+    }
+  },
+  "toolchains": {
+    "2575937652": {
+      "cppCompilerExecutable": "/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cc"
+  ]
+}

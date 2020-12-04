@@ -1,0 +1,13 @@
+ninja: Entering directory `/media/D/backup/github/luolj/TestAppForNewG2/hellocardboard-android/.cxx/cmake/debug/armeabi-v7a'
+[1/4] Building CXX object CMakeFiles/cardboard_jni.dir/src/main/jni/hello_cardboard_jni.cc.o
+../../../../src/main/jni/hello_cardboard_jni.cc:113:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+1 warning generated.
+[2/4] Building CXX object CMakeFiles/cardboard_jni.dir/src/main/jni/hello_cardboard_app.cc.o
+../../../../src/main/jni/hello_cardboard_app.cc:262:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+1 warning generated.
+[3/4] Building CXX object CMakeFiles/cardboard_jni.dir/src/main/jni/util.cc.o
+[4/4] Linking CXX shared library ../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libcardboard_jni.so

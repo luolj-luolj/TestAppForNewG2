@@ -1,0 +1,53 @@
+{
+  "stringTable": {
+    "0": "/media/D/backup/github/luolj/TestAppForNewG2/hellocardboard-android/.cxx/cmake/debug/armeabi-v7a",
+    "1": "--target=armv7-none-linux-androideabi19 --gcc-toolchain=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dcardboard_jni_EXPORTS -I../../../../libraries -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security -std=c++11 -O0 -fno-limit-debug-info -fPIC"
+  },
+  "buildFiles": [
+    "/home/linda/Android/Sdk/ndk/21.0.6113669/build/cmake/android.toolchain.cmake",
+    "/media/D/backup/github/luolj/TestAppForNewG2/hellocardboard-android/CMakeLists.txt",
+    "/home/linda/Android/Sdk/ndk/21.0.6113669/build/cmake/platforms.cmake"
+  ],
+  "cleanCommands": [
+    "/home/linda/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/media/D/backup/github/luolj/TestAppForNewG2/hellocardboard-android/.cxx/cmake/debug/armeabi-v7a\" clean"
+  ],
+  "buildTargetsCommand": "/home/linda/Android/Sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/media/D/backup/github/luolj/TestAppForNewG2/hellocardboard-android/.cxx/cmake/debug/armeabi-v7a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "cardboard_jni-Debug-armeabi-v7a": {
+      "buildCommand": "/home/linda/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/media/D/backup/github/luolj/TestAppForNewG2/hellocardboard-android/.cxx/cmake/debug/armeabi-v7a\" cardboard_jni",
+      "buildType": "debug",
+      "toolchain": "2575937652",
+      "abi": "armeabi-v7a",
+      "artifactName": "cardboard_jni",
+      "files": [
+        {
+          "src": "/media/D/backup/github/luolj/TestAppForNewG2/hellocardboard-android/src/main/jni/hello_cardboard_app.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/media/D/backup/github/luolj/TestAppForNewG2/hellocardboard-android/src/main/jni/hello_cardboard_jni.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/media/D/backup/github/luolj/TestAppForNewG2/hellocardboard-android/src/main/jni/util.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "/media/D/backup/github/luolj/TestAppForNewG2/hellocardboard-android/build/intermediates/cmake/debug/obj/armeabi-v7a/libcardboard_jni.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {
+    "2575937652": {
+      "cppCompilerExecutable": "/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cc"
+  ]
+}

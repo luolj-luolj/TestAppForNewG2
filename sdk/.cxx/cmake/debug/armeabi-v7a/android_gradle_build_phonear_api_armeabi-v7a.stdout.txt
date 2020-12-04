@@ -1,0 +1,2 @@
+ninja: Entering directory `/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a'
+ninja: no work to do.

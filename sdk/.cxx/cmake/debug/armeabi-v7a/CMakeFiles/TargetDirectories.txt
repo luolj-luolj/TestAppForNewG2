@@ -1,0 +1,3 @@
+/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/edit_cache.dir
+/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/phonear_api.dir

@@ -33,4 +33,4 @@ target_link_libraries(cardboard_jni
     ${android-lib}
     ${GLESv2-lib}
     ${log-lib}
-    ${libs_dir}/jni/${ANDROID_ABI}/libcardboard_api.so)
+    ${libs_dir}/jni/${ANDROID_ABI}/libphonear_api.so)

@@ -89,6 +89,16 @@ class HelloCardboardApp {
    */
   void SwitchViewer();
 
+  void SetUsbFileDescriptor(int vid, int pid, int fd, int busnum, int devaddr, const char* usbfs_str);
+
+  void CloseUsb();
+
+  void ExitUsb();
+
+  void SetStUfd(int vid, int pid, int fd, int busnum, int devaddr, const char* usbfs_str);
+
+  int SendDataToSt(int x, int y);
+
  private:
   /**
    * Default near clip plane z-axis coordinate.

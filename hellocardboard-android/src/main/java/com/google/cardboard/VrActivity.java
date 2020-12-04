@@ -20,12 +20,12 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.AssetManager;
+import android.hardware.usb.UsbDevice;
 import android.net.Uri;
 import android.opengl.GLSurfaceView;
 import android.os.Bundle;
 import android.provider.Settings;
-import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -34,7 +34,13 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.PopupMenu;
 import android.widget.Toast;
-import android.support.v4.app.ActivityCompat;
+
+import androidx.annotation.NonNull;
+import androidx.core.app.ActivityCompat;
+
+import com.serenegiant.common.BaseActivity;
+import com.serenegiant.usb.USBMonitor;
+
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
 
@@ -44,12 +50,13 @@ import javax.microedition.khronos.opengles.GL10;
  * <p>This is the main Activity for the sample application. It initializes a GLSurfaceView to allow
  * rendering.
  */
-public class VrActivity extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener {
+public class VrActivity extends BaseActivity implements PopupMenu.OnMenuItemClickListener {
   static {
     System.loadLibrary("cardboard_jni");
   }
 
   private static final String TAG = VrActivity.class.getSimpleName();
+  private static final boolean DEBUG = true;
 
   // Permission request codes
   private static final int PERMISSIONS_REQUEST_CODE = 2;
@@ -60,6 +67,149 @@ public class VrActivity extends AppCompatActivity implements PopupMenu.OnMenuIte
 
   private GLSurfaceView glView;
 
+  private USBMonitor mUSBMonitor;
+  private USBMonitor.UsbControlBlock mCtrlBlock;
+  private final Object mSync = new Object();
+
+  private static int mConnected = 0x00;
+
+  private static final int OV_CONNECTED = 0x01;
+  private static final int ST_CONNECTED = 0x10;
+
+  private USBMonitor.OnDeviceConnectListener mOnDeviceConnectListener = new USBMonitor.OnDeviceConnectListener() {
+    @Override
+    public void onAttach(UsbDevice device) {
+      int vid = device.getVendorId();
+      int pid = device.getProductId();
+            if (DEBUG) Log.v(TAG, String.format("=== onAttach: VID=0x%04x, PID=0x%04x, mConnected=0x%04x\n",vid, pid, mConnected));
+            if (((vid == 0x05A9) && (pid == 0x0F87) && ((mConnected & OV_CONNECTED)!=OV_CONNECTED))
+                || ((vid == 0x0483) && (pid == 0x7705) && ((mConnected&ST_CONNECTED)!= ST_CONNECTED))) {
+                mUSBMonitor.requestPermission(device);
+            }
+    }
+
+    @Override
+    public void onDettach(UsbDevice device) {
+      mConnected = 0x00;
+      //Toast.makeText(MainActivity.this, "USB_DEVICE_DETACHED", Toast.LENGTH_SHORT).show();
+      if (DEBUG) {
+        Log.v(TAG,
+                String.format("=== onDettach: VID=0x%04x, PID=0x%04x\n", device.getVendorId(),
+                        device.getProductId()));
+      }
+    }
+
+    String getUSBFSName(final USBMonitor.UsbControlBlock ctrlBlock) {
+      String DEFAULT_USBFS = "/dev/bus/usb";
+      String result = null;
+      final String name = ctrlBlock.getDeviceName();
+      final String[] v = !TextUtils.isEmpty(name) ? name.split("/") : null;
+      if ((v != null) && (v.length > 2)) {
+        final StringBuilder sb = new StringBuilder(v[0]);
+        for (int i = 1; i < v.length - 2; i++) {
+          sb.append("/").append(v[i]);
+        }
+        result = sb.toString();
+      }
+      if (TextUtils.isEmpty(result)) {
+        Log.w(TAG, "failed to get USBFS path, try to use default path:" + name);
+        result = DEFAULT_USBFS;
+      }
+      return result;
+    }
+
+    @Override
+    public void onConnect(UsbDevice device, USBMonitor.UsbControlBlock ctrlBlock,
+            boolean createNew) {
+      queueEvent(new Runnable() {
+        @Override
+        public void run() {
+          synchronized (mSync) {
+            try {
+              USBMonitor.UsbControlBlock mCtrlBlock = ctrlBlock.clone();
+              int devId = mCtrlBlock.getDeviceId();
+              int vid = mCtrlBlock.getVenderId();
+              int pid = mCtrlBlock.getProductId();
+              if (DEBUG) {
+                Log.d(TAG,
+                        String.format("onConnect: Device ID = %d\nVID=0x%04x\nPID=0x%04x\n", devId,
+                                vid, pid));
+              }
+              if ((vid == 0x05A9) && (pid == 0x0F87)) {
+                if (DEBUG) Log.d(TAG, "IMU MATCH FOUND!");
+                String usbfs_path = mCtrlBlock.getDeviceName();
+                if (DEBUG) Log.d(TAG, "imu_usbfs_path = " + usbfs_path);
+                int file_descriptor = mCtrlBlock.getFileDescriptor();
+                if (DEBUG) Log.d(TAG, "imu_fd = " + file_descriptor);
+                String usb_fs = getUSBFSName(mCtrlBlock);
+                if (DEBUG) Log.d(TAG, "imu_usb_fs = " + usb_fs);
+                nativeSetUsbFileDescriptor(nativeApp, mCtrlBlock.getVenderId(), mCtrlBlock.getProductId(),
+                        mCtrlBlock.getFileDescriptor(),
+                        mCtrlBlock.getBusNum(),
+                        mCtrlBlock.getDevNum(),
+                        getUSBFSName(mCtrlBlock));
+                showToast(R.string.ov_connected);
+                mConnected = (mConnected | OV_CONNECTED);
+              }
+              if ((vid == 0x0483) && (pid == 0x7705)) {
+                if (DEBUG) Log.d(TAG, "ST MATCH FOUND!");
+                String usbfs_path = mCtrlBlock.getDeviceName();
+                if (DEBUG) Log.d(TAG, "st_usbfs_path = " + usbfs_path);
+                int file_descriptor = mCtrlBlock.getFileDescriptor();
+                if (DEBUG) Log.d(TAG, "st_fd = " + file_descriptor);
+                String usb_fs = getUSBFSName(mCtrlBlock);
+                if (DEBUG) Log.d(TAG, "st_usb_fs = " + usb_fs);
+                nativeSetStUfd(nativeApp, mCtrlBlock.getVenderId(), ctrlBlock.getProductId(),
+                        mCtrlBlock.getFileDescriptor(),
+                        mCtrlBlock.getBusNum(),
+                        mCtrlBlock.getDevNum(),
+                        getUSBFSName(mCtrlBlock));
+                showToast(R.string.st_connected);
+                mConnected = (mConnected | ST_CONNECTED);
+              }
+            } catch (IllegalStateException ex) {
+              if (DEBUG) Log.d(TAG, "ex:", ex);
+            } catch (CloneNotSupportedException e) {
+              if (DEBUG) Log.d(TAG, "ex:", e);
+            }
+          }
+        }
+      }, 0);
+    }
+
+
+    @Override
+    public void onDisconnect(UsbDevice device, USBMonitor.UsbControlBlock ctrlBlock) {
+      try {
+        USBMonitor.UsbControlBlock mCtrlBlock = ctrlBlock.clone();
+        int devId = mCtrlBlock.getDeviceId();
+        int vid = mCtrlBlock.getVenderId();
+        int pid = mCtrlBlock.getProductId();
+        if (DEBUG) {
+          Log.d(TAG, String.format(
+                  "onDisconnect: Device ID = %d\\nVID=0x%04x\\nPID=0x%04x\\n\", "
+                          + "devId, vid, pid"));
+        }
+      } catch (IllegalStateException ex) {
+        if (DEBUG) Log.d(TAG, "ex:", ex);
+      } catch (CloneNotSupportedException e) {
+        if (DEBUG) Log.d(TAG, "ex:", e);
+      }
+      queueEvent(new Runnable() {
+        @Override
+        public void run() {
+          synchronized (mSync) {// TODO:
+          }
+        }
+      }, 0);
+    }
+
+    @Override
+    public void onCancel(UsbDevice device) {
+      if (DEBUG) Log.d(TAG, "onCancel");
+    }
+  };
+
   @SuppressLint("ClickableViewAccessibility")
   @Override
   public void onCreate(Bundle savedInstance) {
@@ -67,6 +217,7 @@ public class VrActivity extends AppCompatActivity implements PopupMenu.OnMenuIte
 
     nativeApp = nativeOnCreate(getAssets());
 
+    mUSBMonitor = new USBMonitor(this, mOnDeviceConnectListener);
     setContentView(R.layout.activity_vr);
     glView = findViewById(R.id.surface_view);
     glView.setEGLContextClientVersion(2);
@@ -109,22 +260,41 @@ public class VrActivity extends AppCompatActivity implements PopupMenu.OnMenuIte
   @Override
   protected void onPause() {
     super.onPause();
-    nativeOnPause(nativeApp);
-    glView.onPause();
+    synchronized (mSync) {
+      if (mUSBMonitor != null) {
+        mUSBMonitor.unregister();
+      }
+    }
+    if (DEBUG) {
+      Log.d(TAG, "onPause");
+    }
+    if (mConnected != 0x00) {
+      nativeOnPause(nativeApp);
+      glView.onPause();
+    }
   }
 
   @Override
   protected void onResume() {
     super.onResume();
 
+    synchronized (mSync) {
+      if (mUSBMonitor != null) {
+        mUSBMonitor.register();
+      }
+    }
     // Checks for activity permissions, if not granted, requests them.
     if (!arePermissionsEnabled()) {
       requestPermissions();
       return;
     }
-
-    glView.onResume();
-    nativeOnResume(nativeApp);
+    if (DEBUG) {
+      Log.d(TAG, "onResume");
+    }
+    if (mConnected == 0x11) {
+      glView.onResume();
+      nativeOnResume(nativeApp);
+    }
   }
 
   @Override
@@ -202,7 +372,7 @@ public class VrActivity extends AppCompatActivity implements PopupMenu.OnMenuIte
   /** Callback for the result from requesting permissions. */
   @Override
   public void onRequestPermissionsResult(
-      int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+          int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
     super.onRequestPermissionsResult(requestCode, permissions, grantResults);
     if (!arePermissionsEnabled()) {
       Toast.makeText(this, R.string.no_permissions, Toast.LENGTH_LONG).show();
@@ -251,4 +421,12 @@ public class VrActivity extends AppCompatActivity implements PopupMenu.OnMenuIte
   private native void nativeSetScreenParams(long nativeApp, int width, int height);
 
   private native void nativeSwitchViewer(long nativeApp);
+
+  private native void nativeSetUsbFileDescriptor(long nativeApp, int vid, int pid, int fd, int busnum, int devaddr, String usbfs_str);
+
+  private native void nativeCloseUsb(long nativeApp);
+
+  private native void nativeExitUsb(long nativeApp);
+
+  private  native void nativeSetStUfd(long nativeApp, int vid, int pid, int fd, int busnum, int devaddr, String usbfs_str);
 }

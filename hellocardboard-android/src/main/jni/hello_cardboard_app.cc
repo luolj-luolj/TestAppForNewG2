@@ -241,6 +241,26 @@ void HelloCardboardApp::SwitchViewer() {
   CardboardQrCode_scanQrCodeAndSaveDeviceParams();
 }
 
+void HelloCardboardApp::SetUsbFileDescriptor(int vid, int pid, int fd, int busnum, int devaddr, const char* usbfs_str) {
+  CardboardHidSensor_setUsbParams(vid, pid, fd, busnum, devaddr, usbfs_str);
+}
+
+void HelloCardboardApp::CloseUsb() {
+  CardboardHidSensor_setUsbClose();
+}
+
+void HelloCardboardApp::ExitUsb() {
+  CardboardHidSensor_setUsbExit();
+}
+
+void HelloCardboardApp::SetStUfd(int vid, int pid, int fd, int busnum, int devaddr, const char* usbfs_str) {
+  CardboardHidSensor_setStUfd(vid, pid, fd, busnum, devaddr, usbfs_str);
+}
+
+int HelloCardboardApp::SendDataToSt(int x, int y) {
+  CardboardHidSensor_sendDataToSt(x, y);
+}
+
 bool HelloCardboardApp::UpdateDeviceParams() {
   // Checks if screen or device parameters changed
   if (!screen_params_changed_ && !device_params_changed_) {

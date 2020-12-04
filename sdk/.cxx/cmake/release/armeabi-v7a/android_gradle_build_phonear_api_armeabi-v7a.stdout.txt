@@ -1,0 +1,37 @@
+ninja: Entering directory `/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/release/armeabi-v7a'
+[1/36] Building CXX object CMakeFiles/phonear_api.dir/sensors/lowpass_filter.cc.o
+[2/36] Building CXX object CMakeFiles/phonear_api.dir/qrcode/cardboard_v1/cardboard_v1.cc.o
+[3/36] Building CXX object CMakeFiles/phonear_api.dir/distortion_renderer.cc.o
+[4/36] Building CXX object CMakeFiles/phonear_api.dir/polynomial_radial_distortion.cc.o
+[5/36] Building CXX object CMakeFiles/phonear_api.dir/distortion_mesh.cc.o
+[6/36] Building CXX object CMakeFiles/phonear_api.dir/lens_distortion.cc.o
+[7/36] Building CXX object CMakeFiles/phonear_api.dir/cardboard.cc.o
+[8/36] Building CXX object CMakeFiles/phonear_api.dir/device_params/android/device_params.cc.o
+[9/36] Building CXX object CMakeFiles/phonear_api.dir/sensors/mean_filter.cc.o
+[10/36] Building CXX object CMakeFiles/phonear_api.dir/sensors/xt/Calibration.cc.o
+[11/36] Building CXX object CMakeFiles/phonear_api.dir/sensors/xt/Math.cc.o
+[12/36] Building CXX object CMakeFiles/phonear_api.dir/sensors/gyroscope_bias_estimator.cc.o
+[13/36] Building CXX object CMakeFiles/phonear_api.dir/jni_utils/android/jni_utils.cc.o
+[14/36] Building CXX object CMakeFiles/phonear_api.dir/sensors/neck_model.cc.o
+[15/36] Building CXX object CMakeFiles/phonear_api.dir/sensors/pose_prediction.cc.o
+[16/36] Building CXX object CMakeFiles/phonear_api.dir/head_tracker.cc.o
+[17/36] Building CXX object CMakeFiles/phonear_api.dir/sensors/xt/device_accelerometer_sensor.cc.o
+[18/36] Building CXX object CMakeFiles/phonear_api.dir/sensors/sensor_fusion_ekf.cc.o
+[19/36] Building CXX object CMakeFiles/phonear_api.dir/sensors/xt/hid_sensor.cc.o
+[20/36] Building CXX object CMakeFiles/phonear_api.dir/util/matrix_4x4.cc.o
+[21/36] Building CXX object CMakeFiles/phonear_api.dir/sensors/xt/device_gyroscope_sensor.cc.o
+[22/36] Building CXX object CMakeFiles/phonear_api.dir/sensors/median_filter.cc.o
+[23/36] Building CXX object CMakeFiles/phonear_api.dir/unity/android/unity_jni.cc.o
+[24/36] Building CXX object CMakeFiles/phonear_api.dir/screen_params/android/screen_params.cc.o
+[25/36] Building CXX object CMakeFiles/phonear_api.dir/util/matrix_3x3.cc.o
+[26/36] Building CXX object CMakeFiles/phonear_api.dir/unity/xr_provider/main.cc.o
+[27/36] Building CXX object CMakeFiles/phonear_api.dir/util/vectorutils.cc.o
+[28/36] Building CXX object CMakeFiles/phonear_api.dir/util/matrixutils.cc.o
+[29/36] Building CXX object CMakeFiles/phonear_api.dir/sensors/xt/sensor_event_producer.cc.o
+[30/36] Building CXX object CMakeFiles/phonear_api.dir/qrcode/android/qr_code.cc.o
+[31/36] Building CXX object CMakeFiles/phonear_api.dir/util/rotation.cc.o
+[32/36] Building CXX object CMakeFiles/phonear_api.dir/unity/xr_provider/input.cc.o
+[33/36] Building CXX object CMakeFiles/phonear_api.dir/unity/xr_provider/math_tools.cc.o
+[34/36] Building CXX object CMakeFiles/phonear_api.dir/unity/xr_provider/display.cc.o
+[35/36] Building CXX object CMakeFiles/phonear_api.dir/unity/xr_unity_plugin/cardboard_xr_unity.cc.o
+[36/36] Linking CXX shared library ../../../../build/intermediates/cmake/release/obj/armeabi-v7a/libphonear_api.so

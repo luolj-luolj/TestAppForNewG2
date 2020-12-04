@@ -85,4 +85,31 @@ JNI_METHOD(void, nativeSwitchViewer)
   native(native_app)->SwitchViewer();
 }
 
+JNI_METHOD(void, nativeSetUsbFileDescriptor)
+(JNIEnv* env, jobject obj, jlong native_app, jint vid, jint pid, jint fd, jint busnum, jint devaddr, jstring usbfs_str) {
+  const char *c_usbfs = env->GetStringUTFChars(usbfs_str, JNI_FALSE);
+  native(native_app)->SetUsbFileDescriptor(vid, pid, fd, busnum, devaddr, c_usbfs);
+}
+
+JNI_METHOD(void, nativeCloseUsb)
+(JNIEnv* env, jobject obj, jlong native_app) {
+  native(native_app)->CloseUsb();
+}
+
+JNI_METHOD(void, nativeExitUsb)
+(JNIEnv* env, jobject obj, jlong native_app) {
+  native(native_app)->ExitUsb();
+}
+
+JNI_METHOD(void, nativeSetStUfd)
+(JNIEnv* env, jobject obj, jlong native_app, jint vid, jint pid, jint fd, jint busnum, jint devaddr, jstring usbfs_str) {
+  const char *c_usbfs = env->GetStringUTFChars(usbfs_str, JNI_FALSE);
+  native(native_app)->SetStUfd(vid, pid, fd, busnum, devaddr, c_usbfs);
+}
+
+JNI_METHOD(int, nativeSendDataToSt)
+(JNIEnv* env, jobject obj, jlong native_app, jint x, jint y) {
+  native(native_app)->SendDataToSt(x, y);
+}
+
 }  // extern "C"

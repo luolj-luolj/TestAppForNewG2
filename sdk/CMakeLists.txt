@@ -29,6 +29,7 @@ file(GLOB general_srcs "*.cc")
 # Sensors Sources
 file(GLOB sensors_srcs "sensors/*.cc")
 file(GLOB sensors_android_srcs "sensors/android/*.cc")
+file(GLOB sensors_xt_srcs "sensors/xt/*.cc")
 # JNI Util Sources
 file(GLOB jni_util_srcs "jni_utils/android/*.cc")
 # Util Sources
@@ -49,13 +50,19 @@ file(GLOB cardboard_xr_unity_srcs "unity/xr_unity_plugin/*.cc")
 # === Cardboard XR Provider for Unity ===
 file(GLOB cardboard_xr_provider_srcs "unity/xr_provider/*.cc")
 
+# Input binary
+add_library(usb100 SHARED IMPORTED)
+SET(usb100_path ${CMAKE_CURRENT_SOURCE_DIR}/libs/${ANDROID_ABI}/libusb100.so)
+set_target_properties(usb100 PROPERTIES IMPORTED_LOCATION ${usb100_path})
+MESSAGE(STATUS "src usb1.0 so path=${usb100_path}")
+
 # Output binary
-add_library(cardboard_api SHARED
+add_library(phonear_api SHARED
     # Cardboard API sources.
     ${cardboard_v1_srcs}
     ${general_srcs}
     ${sensors_srcs}
-    ${sensors_android_srcs}
+    ${sensors_xt_srcs}
     ${jni_util_srcs}
     ${util_srcs}
     ${qrcode_srcs}
@@ -69,11 +76,13 @@ add_library(cardboard_api SHARED
     ${cardboard_xr_provider_srcs})
 
 # Includes
-target_include_directories(cardboard_api
-    PRIVATE ../third_party/unity_plugin_api)
+target_include_directories(phonear_api
+    PRIVATE ../third_party/unity_plugin_api
+    ${CMAKE_CURRENT_SOURCE_DIR}/libs/include/)
 
 # Build
-target_link_libraries(cardboard_api
+target_link_libraries(phonear_api
     ${android-lib}
     ${GLESv2-lib}
-    ${log-lib})
+    ${log-lib}
+    usb100)

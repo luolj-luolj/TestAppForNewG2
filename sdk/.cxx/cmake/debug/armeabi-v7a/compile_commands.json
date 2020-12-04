@@ -1,0 +1,211 @@
+[
+{
+  "directory": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a",
+  "command": "/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi19 --gcc-toolchain=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dphonear_api_EXPORTS -I../../../../. -I../../../../../third_party/unity_plugin_api -I../../../../libs/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/phonear_api.dir/qrcode/cardboard_v1/cardboard_v1.cc.o -c /media/D/backup/github/luolj/TestAppForNewG2/sdk/qrcode/cardboard_v1/cardboard_v1.cc",
+  "file": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/qrcode/cardboard_v1/cardboard_v1.cc"
+},
+
+{
+  "directory": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a",
+  "command": "/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi19 --gcc-toolchain=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dphonear_api_EXPORTS -I../../../../. -I../../../../../third_party/unity_plugin_api -I../../../../libs/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/phonear_api.dir/cardboard.cc.o -c /media/D/backup/github/luolj/TestAppForNewG2/sdk/cardboard.cc",
+  "file": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/cardboard.cc"
+},
+
+{
+  "directory": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a",
+  "command": "/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi19 --gcc-toolchain=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dphonear_api_EXPORTS -I../../../../. -I../../../../../third_party/unity_plugin_api -I../../../../libs/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/phonear_api.dir/distortion_mesh.cc.o -c /media/D/backup/github/luolj/TestAppForNewG2/sdk/distortion_mesh.cc",
+  "file": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/distortion_mesh.cc"
+},
+
+{
+  "directory": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a",
+  "command": "/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi19 --gcc-toolchain=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dphonear_api_EXPORTS -I../../../../. -I../../../../../third_party/unity_plugin_api -I../../../../libs/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/phonear_api.dir/distortion_renderer.cc.o -c /media/D/backup/github/luolj/TestAppForNewG2/sdk/distortion_renderer.cc",
+  "file": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/distortion_renderer.cc"
+},
+
+{
+  "directory": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a",
+  "command": "/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi19 --gcc-toolchain=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dphonear_api_EXPORTS -I../../../../. -I../../../../../third_party/unity_plugin_api -I../../../../libs/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/phonear_api.dir/head_tracker.cc.o -c /media/D/backup/github/luolj/TestAppForNewG2/sdk/head_tracker.cc",
+  "file": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/head_tracker.cc"
+},
+
+{
+  "directory": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a",
+  "command": "/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi19 --gcc-toolchain=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dphonear_api_EXPORTS -I../../../../. -I../../../../../third_party/unity_plugin_api -I../../../../libs/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/phonear_api.dir/lens_distortion.cc.o -c /media/D/backup/github/luolj/TestAppForNewG2/sdk/lens_distortion.cc",
+  "file": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/lens_distortion.cc"
+},
+
+{
+  "directory": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a",
+  "command": "/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi19 --gcc-toolchain=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dphonear_api_EXPORTS -I../../../../. -I../../../../../third_party/unity_plugin_api -I../../../../libs/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/phonear_api.dir/polynomial_radial_distortion.cc.o -c /media/D/backup/github/luolj/TestAppForNewG2/sdk/polynomial_radial_distortion.cc",
+  "file": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/polynomial_radial_distortion.cc"
+},
+
+{
+  "directory": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a",
+  "command": "/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi19 --gcc-toolchain=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dphonear_api_EXPORTS -I../../../../. -I../../../../../third_party/unity_plugin_api -I../../../../libs/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/phonear_api.dir/sensors/gyroscope_bias_estimator.cc.o -c /media/D/backup/github/luolj/TestAppForNewG2/sdk/sensors/gyroscope_bias_estimator.cc",
+  "file": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/sensors/gyroscope_bias_estimator.cc"
+},
+
+{
+  "directory": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a",
+  "command": "/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi19 --gcc-toolchain=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dphonear_api_EXPORTS -I../../../../. -I../../../../../third_party/unity_plugin_api -I../../../../libs/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/phonear_api.dir/sensors/lowpass_filter.cc.o -c /media/D/backup/github/luolj/TestAppForNewG2/sdk/sensors/lowpass_filter.cc",
+  "file": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/sensors/lowpass_filter.cc"
+},
+
+{
+  "directory": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a",
+  "command": "/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi19 --gcc-toolchain=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dphonear_api_EXPORTS -I../../../../. -I../../../../../third_party/unity_plugin_api -I../../../../libs/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/phonear_api.dir/sensors/mean_filter.cc.o -c /media/D/backup/github/luolj/TestAppForNewG2/sdk/sensors/mean_filter.cc",
+  "file": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/sensors/mean_filter.cc"
+},
+
+{
+  "directory": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a",
+  "command": "/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi19 --gcc-toolchain=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dphonear_api_EXPORTS -I../../../../. -I../../../../../third_party/unity_plugin_api -I../../../../libs/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/phonear_api.dir/sensors/median_filter.cc.o -c /media/D/backup/github/luolj/TestAppForNewG2/sdk/sensors/median_filter.cc",
+  "file": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/sensors/median_filter.cc"
+},
+
+{
+  "directory": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a",
+  "command": "/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi19 --gcc-toolchain=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dphonear_api_EXPORTS -I../../../../. -I../../../../../third_party/unity_plugin_api -I../../../../libs/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/phonear_api.dir/sensors/neck_model.cc.o -c /media/D/backup/github/luolj/TestAppForNewG2/sdk/sensors/neck_model.cc",
+  "file": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/sensors/neck_model.cc"
+},
+
+{
+  "directory": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a",
+  "command": "/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi19 --gcc-toolchain=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dphonear_api_EXPORTS -I../../../../. -I../../../../../third_party/unity_plugin_api -I../../../../libs/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/phonear_api.dir/sensors/pose_prediction.cc.o -c /media/D/backup/github/luolj/TestAppForNewG2/sdk/sensors/pose_prediction.cc",
+  "file": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/sensors/pose_prediction.cc"
+},
+
+{
+  "directory": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a",
+  "command": "/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi19 --gcc-toolchain=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dphonear_api_EXPORTS -I../../../../. -I../../../../../third_party/unity_plugin_api -I../../../../libs/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/phonear_api.dir/sensors/sensor_fusion_ekf.cc.o -c /media/D/backup/github/luolj/TestAppForNewG2/sdk/sensors/sensor_fusion_ekf.cc",
+  "file": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/sensors/sensor_fusion_ekf.cc"
+},
+
+{
+  "directory": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a",
+  "command": "/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi19 --gcc-toolchain=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dphonear_api_EXPORTS -I../../../../. -I../../../../../third_party/unity_plugin_api -I../../../../libs/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/phonear_api.dir/sensors/xt/Calibration.cc.o -c /media/D/backup/github/luolj/TestAppForNewG2/sdk/sensors/xt/Calibration.cc",
+  "file": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/sensors/xt/Calibration.cc"
+},
+
+{
+  "directory": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a",
+  "command": "/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi19 --gcc-toolchain=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dphonear_api_EXPORTS -I../../../../. -I../../../../../third_party/unity_plugin_api -I../../../../libs/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/phonear_api.dir/sensors/xt/Math.cc.o -c /media/D/backup/github/luolj/TestAppForNewG2/sdk/sensors/xt/Math.cc",
+  "file": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/sensors/xt/Math.cc"
+},
+
+{
+  "directory": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a",
+  "command": "/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi19 --gcc-toolchain=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dphonear_api_EXPORTS -I../../../../. -I../../../../../third_party/unity_plugin_api -I../../../../libs/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/phonear_api.dir/sensors/xt/device_accelerometer_sensor.cc.o -c /media/D/backup/github/luolj/TestAppForNewG2/sdk/sensors/xt/device_accelerometer_sensor.cc",
+  "file": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/sensors/xt/device_accelerometer_sensor.cc"
+},
+
+{
+  "directory": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a",
+  "command": "/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi19 --gcc-toolchain=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dphonear_api_EXPORTS -I../../../../. -I../../../../../third_party/unity_plugin_api -I../../../../libs/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/phonear_api.dir/sensors/xt/device_gyroscope_sensor.cc.o -c /media/D/backup/github/luolj/TestAppForNewG2/sdk/sensors/xt/device_gyroscope_sensor.cc",
+  "file": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/sensors/xt/device_gyroscope_sensor.cc"
+},
+
+{
+  "directory": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a",
+  "command": "/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi19 --gcc-toolchain=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dphonear_api_EXPORTS -I../../../../. -I../../../../../third_party/unity_plugin_api -I../../../../libs/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/phonear_api.dir/sensors/xt/hid_sensor.cc.o -c /media/D/backup/github/luolj/TestAppForNewG2/sdk/sensors/xt/hid_sensor.cc",
+  "file": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/sensors/xt/hid_sensor.cc"
+},
+
+{
+  "directory": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a",
+  "command": "/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi19 --gcc-toolchain=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dphonear_api_EXPORTS -I../../../../. -I../../../../../third_party/unity_plugin_api -I../../../../libs/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/phonear_api.dir/sensors/xt/sensor_event_producer.cc.o -c /media/D/backup/github/luolj/TestAppForNewG2/sdk/sensors/xt/sensor_event_producer.cc",
+  "file": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/sensors/xt/sensor_event_producer.cc"
+},
+
+{
+  "directory": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a",
+  "command": "/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi19 --gcc-toolchain=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dphonear_api_EXPORTS -I../../../../. -I../../../../../third_party/unity_plugin_api -I../../../../libs/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/phonear_api.dir/jni_utils/android/jni_utils.cc.o -c /media/D/backup/github/luolj/TestAppForNewG2/sdk/jni_utils/android/jni_utils.cc",
+  "file": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/jni_utils/android/jni_utils.cc"
+},
+
+{
+  "directory": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a",
+  "command": "/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi19 --gcc-toolchain=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dphonear_api_EXPORTS -I../../../../. -I../../../../../third_party/unity_plugin_api -I../../../../libs/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/phonear_api.dir/util/matrix_3x3.cc.o -c /media/D/backup/github/luolj/TestAppForNewG2/sdk/util/matrix_3x3.cc",
+  "file": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/util/matrix_3x3.cc"
+},
+
+{
+  "directory": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a",
+  "command": "/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi19 --gcc-toolchain=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dphonear_api_EXPORTS -I../../../../. -I../../../../../third_party/unity_plugin_api -I../../../../libs/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/phonear_api.dir/util/matrix_4x4.cc.o -c /media/D/backup/github/luolj/TestAppForNewG2/sdk/util/matrix_4x4.cc",
+  "file": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/util/matrix_4x4.cc"
+},
+
+{
+  "directory": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a",
+  "command": "/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi19 --gcc-toolchain=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dphonear_api_EXPORTS -I../../../../. -I../../../../../third_party/unity_plugin_api -I../../../../libs/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/phonear_api.dir/util/matrixutils.cc.o -c /media/D/backup/github/luolj/TestAppForNewG2/sdk/util/matrixutils.cc",
+  "file": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/util/matrixutils.cc"
+},
+
+{
+  "directory": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a",
+  "command": "/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi19 --gcc-toolchain=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dphonear_api_EXPORTS -I../../../../. -I../../../../../third_party/unity_plugin_api -I../../../../libs/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/phonear_api.dir/util/rotation.cc.o -c /media/D/backup/github/luolj/TestAppForNewG2/sdk/util/rotation.cc",
+  "file": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/util/rotation.cc"
+},
+
+{
+  "directory": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a",
+  "command": "/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi19 --gcc-toolchain=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dphonear_api_EXPORTS -I../../../../. -I../../../../../third_party/unity_plugin_api -I../../../../libs/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/phonear_api.dir/util/vectorutils.cc.o -c /media/D/backup/github/luolj/TestAppForNewG2/sdk/util/vectorutils.cc",
+  "file": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/util/vectorutils.cc"
+},
+
+{
+  "directory": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a",
+  "command": "/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi19 --gcc-toolchain=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dphonear_api_EXPORTS -I../../../../. -I../../../../../third_party/unity_plugin_api -I../../../../libs/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/phonear_api.dir/qrcode/android/qr_code.cc.o -c /media/D/backup/github/luolj/TestAppForNewG2/sdk/qrcode/android/qr_code.cc",
+  "file": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/qrcode/android/qr_code.cc"
+},
+
+{
+  "directory": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a",
+  "command": "/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi19 --gcc-toolchain=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dphonear_api_EXPORTS -I../../../../. -I../../../../../third_party/unity_plugin_api -I../../../../libs/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/phonear_api.dir/screen_params/android/screen_params.cc.o -c /media/D/backup/github/luolj/TestAppForNewG2/sdk/screen_params/android/screen_params.cc",
+  "file": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/screen_params/android/screen_params.cc"
+},
+
+{
+  "directory": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a",
+  "command": "/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi19 --gcc-toolchain=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dphonear_api_EXPORTS -I../../../../. -I../../../../../third_party/unity_plugin_api -I../../../../libs/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/phonear_api.dir/device_params/android/device_params.cc.o -c /media/D/backup/github/luolj/TestAppForNewG2/sdk/device_params/android/device_params.cc",
+  "file": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/device_params/android/device_params.cc"
+},
+
+{
+  "directory": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a",
+  "command": "/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi19 --gcc-toolchain=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dphonear_api_EXPORTS -I../../../../. -I../../../../../third_party/unity_plugin_api -I../../../../libs/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/phonear_api.dir/unity/android/unity_jni.cc.o -c /media/D/backup/github/luolj/TestAppForNewG2/sdk/unity/android/unity_jni.cc",
+  "file": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/unity/android/unity_jni.cc"
+},
+
+{
+  "directory": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a",
+  "command": "/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi19 --gcc-toolchain=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dphonear_api_EXPORTS -I../../../../. -I../../../../../third_party/unity_plugin_api -I../../../../libs/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/phonear_api.dir/unity/xr_unity_plugin/cardboard_xr_unity.cc.o -c /media/D/backup/github/luolj/TestAppForNewG2/sdk/unity/xr_unity_plugin/cardboard_xr_unity.cc",
+  "file": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/unity/xr_unity_plugin/cardboard_xr_unity.cc"
+},
+
+{
+  "directory": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a",
+  "command": "/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi19 --gcc-toolchain=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dphonear_api_EXPORTS -I../../../../. -I../../../../../third_party/unity_plugin_api -I../../../../libs/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/phonear_api.dir/unity/xr_provider/display.cc.o -c /media/D/backup/github/luolj/TestAppForNewG2/sdk/unity/xr_provider/display.cc",
+  "file": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/unity/xr_provider/display.cc"
+},
+
+{
+  "directory": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a",
+  "command": "/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi19 --gcc-toolchain=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dphonear_api_EXPORTS -I../../../../. -I../../../../../third_party/unity_plugin_api -I../../../../libs/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/phonear_api.dir/unity/xr_provider/input.cc.o -c /media/D/backup/github/luolj/TestAppForNewG2/sdk/unity/xr_provider/input.cc",
+  "file": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/unity/xr_provider/input.cc"
+},
+
+{
+  "directory": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a",
+  "command": "/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi19 --gcc-toolchain=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dphonear_api_EXPORTS -I../../../../. -I../../../../../third_party/unity_plugin_api -I../../../../libs/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/phonear_api.dir/unity/xr_provider/main.cc.o -c /media/D/backup/github/luolj/TestAppForNewG2/sdk/unity/xr_provider/main.cc",
+  "file": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/unity/xr_provider/main.cc"
+},
+
+{
+  "directory": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/.cxx/cmake/debug/armeabi-v7a",
+  "command": "/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi19 --gcc-toolchain=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/linda/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dphonear_api_EXPORTS -I../../../../. -I../../../../../third_party/unity_plugin_api -I../../../../libs/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/phonear_api.dir/unity/xr_provider/math_tools.cc.o -c /media/D/backup/github/luolj/TestAppForNewG2/sdk/unity/xr_provider/math_tools.cc",
+  "file": "/media/D/backup/github/luolj/TestAppForNewG2/sdk/unity/xr_provider/math_tools.cc"
+}
+]
