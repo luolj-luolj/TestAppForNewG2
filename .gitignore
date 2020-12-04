@@ -1,0 +1,11 @@
+.gradle
+.idea
+cardboard.iml
+hellocardboard-android/.externalNativeBuild/
+hellocardboard-android/build/
+hellocardboard-android/hellocardboard-android.iml
+hellocardboard-android/libraries/
+local.properties
+sdk/.externalNativeBuild/
+sdk/build/
+sdk/sdk.iml
