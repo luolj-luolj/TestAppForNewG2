@@ -112,4 +112,9 @@ JNI_METHOD(int, nativeSendDataToSt)
   native(native_app)->SendDataToSt(x, y);
 }
 
+JNI_METHOD(int, nativeSendCommandToSt)
+(JNIEnv* env, jobject obj, jlong native_app, jbyte x, jbyte y) {
+  native(native_app)->SendCommandToSt(x, y);
+}
+
 }  // extern "C"

@@ -261,6 +261,10 @@ int HelloCardboardApp::SendDataToSt(int x, int y) {
   CardboardHidSensor_sendDataToSt(x, y);
 }
 
+int HelloCardboardApp::SendCommandToSt(unsigned char command,  unsigned char value) {
+  CardboardHidSensor_sendCommandToSt(command, value);
+}
+
 bool HelloCardboardApp::UpdateDeviceParams() {
   // Checks if screen or device parameters changed
   if (!screen_params_changed_ && !device_params_changed_) {

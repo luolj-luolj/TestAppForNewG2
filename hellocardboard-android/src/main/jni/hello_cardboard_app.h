@@ -99,6 +99,8 @@ class HelloCardboardApp {
 
   int SendDataToSt(int x, int y);
 
+  int SendCommandToSt(unsigned char command, unsigned char value);
+
  private:
   /**
    * Default near clip plane z-axis coordinate.

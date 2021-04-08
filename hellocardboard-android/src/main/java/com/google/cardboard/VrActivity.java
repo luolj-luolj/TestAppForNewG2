@@ -39,7 +39,10 @@ import androidx.annotation.NonNull;
 import androidx.core.app.ActivityCompat;
 
 import com.serenegiant.common.BaseActivity;
+import com.serenegiant.usb.DeviceFilter;
 import com.serenegiant.usb.USBMonitor;
+
+import java.util.List;
 
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
@@ -218,6 +221,9 @@ public class VrActivity extends BaseActivity implements PopupMenu.OnMenuItemClic
     nativeApp = nativeOnCreate(getAssets());
 
     mUSBMonitor = new USBMonitor(this, mOnDeviceConnectListener);
+    final List<DeviceFilter> filters = DeviceFilter.getDeviceFilters(this, R.xml.device_filter);
+    mUSBMonitor.setDeviceFilter(filters);
+
     setContentView(R.layout.activity_vr);
     glView = findViewById(R.id.surface_view);
     glView.setEGLContextClientVersion(2);
@@ -260,11 +266,6 @@ public class VrActivity extends BaseActivity implements PopupMenu.OnMenuItemClic
   @Override
   protected void onPause() {
     super.onPause();
-    synchronized (mSync) {
-      if (mUSBMonitor != null) {
-        mUSBMonitor.unregister();
-      }
-    }
     if (DEBUG) {
       Log.d(TAG, "onPause");
     }
@@ -280,7 +281,11 @@ public class VrActivity extends BaseActivity implements PopupMenu.OnMenuItemClic
 
     synchronized (mSync) {
       if (mUSBMonitor != null) {
-        mUSBMonitor.register();
+        if (mUSBMonitor.isRegistered()) {
+          if (DEBUG) Log.d(TAG, "already registed");
+        } else {
+          mUSBMonitor.register();
+        }
       }
     }
     // Checks for activity permissions, if not granted, requests them.
@@ -300,6 +305,13 @@ public class VrActivity extends BaseActivity implements PopupMenu.OnMenuItemClic
   @Override
   protected void onDestroy() {
     super.onDestroy();
+    synchronized (mSync) {
+      if (mUSBMonitor != null) {
+        if (mUSBMonitor.isRegistered()) {
+          mUSBMonitor.unregister();
+        }
+      }
+    }
     nativeOnDestroy(nativeApp);
     nativeApp = 0;
   }

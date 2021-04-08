@@ -66,14 +66,10 @@ class HidSensor {
 
   static void DeleteInstance();
 
-  void setParams(int vid, int pid, int fd, int busnum, int devaddr, const char *usbfs);
-
+  int setParams(int vid, int pid, int fd, int busnum, int devaddr, const char *usbfs);
   bool init();
-
   bool open();
-
   void close();
-
   void exit();
 
   int startReading(unsigned char *buffer, int length, unsigned int timeout);
@@ -82,8 +78,13 @@ class HidSensor {
 
   int startReadingCaliData(int type, std::array<float, 3>& cali_data);
 
-  void setStUfd(int vid, int pid, int fd, int busnum, int devaddr, const char* usbfs_str);
+  int setStUfd(int vid, int pid, int fd, int busnum, int devaddr, const char* usbfs_str);
+  int initSt();
+  int openSt();
+  void closeSt(void);
+  void exitSt();
   int handShakeWithSt(void);
+  int sendCommandToSt(unsigned char command, unsigned char value);
   int sendDataToSt(int x, int y);
   int receiveDataFromStControlChannel(void);
   int receiveDataFromStDataChannel(void);
@@ -102,17 +103,6 @@ class HidSensor {
 private:
   static HidSensor *m_SingleInstance;
   static std::mutex m_Mutex;
-
-  struct libusb_context *usb_ctx;
-  struct libusb_device *usb_dev;
-  struct libusb_device_handle *handle;
-  struct libusb_config_descriptor *conf_desc;
-  int interface_num;
-
-  struct libusb_context *st_usb_ctx;
-  struct libusb_device *st_usb_dev;
-  struct libusb_device_handle *st_usb_handle;
-  struct libusb_config_descriptor *st_conf_desc;
 };
 }
 #endif //CARDBOARD_SDK_SENSORS_XT_HID_SENSOR_H_
