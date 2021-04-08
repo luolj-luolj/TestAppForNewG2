@@ -13,6 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+#include <sensors/xt/hid_sensor.h>
 #include "include/cardboard.h"
 
 #include "distortion_renderer.h"
@@ -208,35 +209,48 @@ void CardboardHidSensor_setUsbParams(int vid, int pid, int fd,
 
 void CardboardHidSensor_setUsbClose() {
   cardboard::HidSensor *hid_sensor_ = cardboard::HidSensor::GetInstance();
+  hid_sensor_->closeSt();
   hid_sensor_->close();
 }
 
 void CardboardHidSensor_setUsbExit() {
   cardboard::HidSensor *hid_sensor_ = cardboard::HidSensor::GetInstance();
+  hid_sensor_->exitSt();
   hid_sensor_->exit();
 }
 
 void CardboardHidSensor_setStUfd(int vid, int pid, int fd,
                                      int busnum, int devaddr, const char *usbfs) {
     cardboard::HidSensor *hid_sensor_ = cardboard::HidSensor::GetInstance();
-    hid_sensor_->setStUfd(vid, pid, fd, busnum, devaddr, usbfs);
-    int ret = hid_sensor_->handShakeWithSt();
+    int ret = hid_sensor_->setStUfd(vid, pid, fd, busnum, devaddr, usbfs);
     if (ret == 0) {
-        PHONEAR_LOGI("st usb handshake successfully");
-        ret = hid_sensor_->receiveDataFromStControlChannel();
+        ret = hid_sensor_->handShakeWithSt();
         if (ret == 0) {
-            PHONEAR_LOGI("load calibration file successfully");
+            PHONEAR_LOGI("st usb handshake successfully");
+            ret = hid_sensor_->receiveDataFromStControlChannel();
+            if (ret == 0) {
+                PHONEAR_LOGI("load calibration file successfully");
+                hid_sensor_->closeSt();
+            } else {
+                PHONEAR_LOGE("load calibration file failed %d", ret);
+            }
         } else {
-            PHONEAR_LOGE("load calibration file failed %d", ret);
+            PHONEAR_LOGE("st usb handshake failed %d", ret);
         }
+
     } else {
-        PHONEAR_LOGE("st usb handshake failed %d", ret);
+        PHONEAR_LOGE("st usb already set %d", ret);
     }
 }
 
 int CardboardHidSensor_sendDataToSt(int x, int y) {
     cardboard::HidSensor *hid_sensor_ = cardboard::HidSensor::GetInstance();
     return hid_sensor_->sendDataToSt(x, y);
+}
+
+int CardboardHidSensor_sendCommandToSt(unsigned char command, unsigned char value) {
+    cardboard::HidSensor *hid_sensor_ = cardboard::HidSensor::GetInstance();
+    return hid_sensor_->sendCommandToSt(command, value);
 }
 
 }  // extern "C"

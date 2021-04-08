@@ -361,6 +361,8 @@ void CardboardHidSensor_setStUfd(int vid, int pid, int fd,
 
 int CardboardHidSensor_sendDataToSt(int x, int y);
 
+int CardboardHidSensor_sendCommandToSt(unsigned char command, unsigned char value);
+
 #ifdef __cplusplus
 }
 #endif

@@ -1947,6 +1947,9 @@ typedef int libusb_hotplug_callback_handle;
  *
  * Flags for hotplug events */
 typedef enum {
+	/** Default value when not using any flags. */
+	LIBUSB_HOTPLUG_NO_FLAGS = 0,
+
 	/** Arm the callback and fire it for all matching currently attached devices. */
 	LIBUSB_HOTPLUG_ENUMERATE = 1,
 } libusb_hotplug_flag;
